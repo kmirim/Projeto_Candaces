@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="srcs/logo-casa-de-candaces.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Casa de Candaces</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body data-bs-theme="dark">
+
+  <header>
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="banner_sup_gold.png" alt="Logo da Casa de Candaces em dourado"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> <!--Botao hamburguer-->
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo-mobile.png" alt="Logo da Casa de Candaces"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno" checked> <!--Comecar sempre no modo escuro check-->
+                    <label class="form-check-label" for="modo-noturno">Modo noturno</label>
+                  </div>
+                </a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+      <!--PRIMEIRO BANNER-->
+      <section class="banners banner-1 d-flex flex-column justify-content-center text-center"></section>
+      
+      <!--BLOCO DE PRODUCOES E PARTICIPACOES-->
+      <section class="py-5">
+        <h2 class="text-center fw-bold pb-1">Lorem ipsum dolor</h2>
+        <div class="container d-flex justify-content-around flex-wrap">
+          <!--PRIMEIRO CARD-->
+          <div class="card bg-dark text-white">
+            <img class="card-img" src="srcs/terra.jpg" alt="Imagem do card">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos</p>
+              <p class="card-text">Atualizados 3 minutos atrás</p>
+              <a href="#" class="btn btn-primary">Lorem</a>
+            </div>
+          </div>
+          <!--SEGUNDO CARD-->  
+          <div class="card bg-dark text-white">
+            <img class="card-img" src="srcs/acson.jpg" alt="Imagem do card">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos</p>
+              <p class="card-text">Sed ut perspiciatis unde</p>
+              <a href="#" class="btn btn-primary">Lorem</a>
+            </div>
+          </div>
+          <!--TERCEIRO CARD-->
+          <div class="card bg-dark text-white">
+            <img class="card-img" src="srcs/acson.jpg" alt="Imagem do card">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos</p>
+              <p class="card-text">Sed ut perspiciatis unde</p>
+              <a href="#" class="btn btn-primary">Lorem</a>
+            </div>
+          </div>
+          <!--QUARTO CARD-->
+          <div class="card bg-dark text-white">
+            <img class="card-img" src="srcs/acson.jpg" alt="Imagem do card">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos</p>
+              <p class="card-text">Sed ut perspiciatis unde</p>
+              <a href="#" class="btn btn-primary">Lorem</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SEGUNDO BANNER - FACO A MENOR IDEIA DO QUE FAZER-->
+      <section class="banners banner-2 d-flex flex-column justify-content-center">
+        <div class="banners-titulo bg-body-secondary text-center py-5">
+          <h2 class="fw-bold"> Nós vivemos em encruzilhadas porque nossa transcestralidade não deitou e assim, começou a travar a guerra para sair dos becos sem saída coloniais.</h2>
+          <p> O participar da performance é expressão de pertencimento a culturas ancestrais, e na pista registramos nossas histórias. Atualizamos o compromisso de não morrer e de perpetuamos as nossas fontes de vida.
+
+          </p>
+        </div>
+      </section>
+
+      <!--SEGUNDO BLOCO - APRESENTACAO DA FML -->
+      <section class="py-5">
+        <h2 class="text-center fw-bold pb-1">Lorem ipsum dolor</h2>
+        <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="srcs/galeria - 2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Lorem ipsum</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="srcs/galeria - 10.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Lorem ipsum</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="srcs/galeria - 12.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Lorem ipsum</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="srcs/galeria - 4.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Lorem ipsum</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#meuCarrossel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#meuCarrossel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      
+      <!--TERCEIRO BANNER-->
+      <section class="banners banner-3">
+        
+      </section>
+      <section class="py-5">
+        <h2 class="text-center fw-bold pb-1"> Nossos momentos </h2>
+
+        <div class="container d-flex justify-content-around flex-wrap">
+
+          
+          
+        </div>
+      </section>
+      
+      <section class="py-4 container">
+        <div class="row">
+          <div class="col-10 col-xl-8 mx-auto">
+            <div class="border border-2 rounded p-3">
+              <h3 class="fw-bold p-3">Entre em contato!</h3>
+              <form id="contato">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+                  <label for="floatingNome">Nome</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                  <label for="floatingEmail">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="floatingTelefone" placeholder="Telefone">
+                  <label for="floatingTelefone">Telefone</label>
+                </div>
+                <select class="form-select mb-3" aria-label="Default select example">
+                  <option selected>Preferência de contato:</option>
+                  <option value="1">WhatsApp</option>
+                  <option value="2">Email</option>
+                  <option value="3">Ligação</option>
+                </select>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Deseja receber novidades por email?
+                  </label>
+                </div>
+                <button type="button" class="btn botao-padrao w-100 fw-bold mt-3 py-3">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <footer class="text-center">
+        <section class="container p-4 pb-0 mb-4">
+          <a class="btn" href="https://wa.me/5511947744189"><i class="bi bi-whatsapp"></i></a>
+          <a class="btn" href="https://www.instagram.com/casadecandaces/"><i class="bi bi-instagram"></i></a>
+          <a class="btn" href="https://twitter.com/casadecandaces"><i class="bi bi-twitter"></i></a>
+        </section>
+        <div class="p-3">
+            2023 <i class="bi bi-c-circle"></i> Desenvolvido por Kaluanã Candace | Amo minha fml
+        </div>
+    </footer>
+
+  </main>
+
+    <!-- canvas 1 -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">/CO</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Objetivo
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Projeto voltado prioritariamente para pessoas pertencentes a cena kiki da comunidade ballroom - composta principalmente por pessoas trans, travestis e LGBQIA+, racializadas e periféricas - de São Paulo e região metropolitana e aberto para todas 
+                outras pessoas interessadas na ball e nas atividades adjacentes a ela, com o objetivo de realizar a primeira edição da 2000 Ball, organizada pela Casa de Candaces.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Descrição das atividades
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                As atividades do projeto articulam a realização da 2000 Ball, interligando ela aos temas relacionados à promoção de formações sobre a cultura de baile, saúde das populações trans e negras e à prevenção das IST e HIV, na perspectiva da prevenção combinada, com as técnicas de produção multimídia e artística, em articulação com o comunidade ballroom como um todo. Para isso, empreenderá sete horas de atividades que compõem a realização da Black and Gold Ball, com 15 categorias. 
+                É importante ressaltar que, o projeto teve abordagem interseccional, de modo que explorou questões relacionadas à gênero, raça, sexualidade, classe, geração e outros marcadores de diferença, levando em conta a forma como eles agudizam as vulnerabilidades individuais, sociais e programáticas e a comunidade ballroom como mote para as discussões e atividades artísticas e sociais. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Apoio
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Absolut <br>
+                Casa 1
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Canvas 2 -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-2" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Bienal SP</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionEventos">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionEventos" aria-expanded="false" aria-controls="collapseOne">
+              Descrição
+            </button>
+          </h2>
+          <div id="accordionEventos" class="accordion-collapse collapse" data-bs-parent="#accordionEventos">
+            <div class="accordion-body">
+              As atividades deste projeto articulam a realização da terceira Black and Gold Ball, idealizada pela Casa de Candaces para a 35ª Bienal de São Paulo - 
+              Coreografias do Impossível. A Black and Gold Ball, desde sua concepção, busca fomentar um imaginário em que as pessoas trans e travestis são criadoras de realidades prósperas, onde são produtoras de riqueza e conhecimento. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionWhat" aria-expanded="false" aria-controls="collapseOne">
+              O que é Ballroom?
+            </button>
+          </h2>
+          <div id="accordionWhat" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              A cultura ballroom surgiu nos Estados Unidos como espaço de acolhimento e expressão cultural da comunidade LGBTQIA+ negra e latina e tem suas raízes nos bailes drag, cujos primeiros registros vem desde a segunda metade do século XIX. No final da década de 1960, eclodiram conflitos raciais nos concursos de beleza dos bailes drag. Crystal LaBeija, considerada pioneira da comunidade ballroom em Nova York, questionou alguns padrões de beleza estabelecidos, que privilegiavam as candidatas brancas e por consequência exigiam o embranquecimento das candidatas negras. 
+              A partir disso, começou a se formar uma nova rede de bailes e competições voltadas para a comunidade negra e latina e, com o passar do tempo, foi se dividindo em diferentes categorias de estética, moda e dança - o vogue, também dando início a organização de coletividades intituladas "houses" ou “casas”. A ballroom se espalhou pelo mundo e hoje temos no Brasil movimentações em todas as suas regiões, trazendo contribuições importantes para a cena a partir das múltiplas vivências existentes no país e também espaço de referência e acolhimento para a comunidade LGBTQIA+. 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <!-- Canvas 3 -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-3" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Museu da História e da Cultura Afro-Brasileira</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionWhen" aria-expanded="false" aria-controls="collapseOne">
+              Fundação
+            </button>
+          </h2>
+          <div id="accordionWhen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              A Casa de Candaces foi fundada em Junho de 2019, na Pajuball, uma ball realizada pelo Coletivo Amem na Semana do Orgulho LGBTQIA+ em São Paulo, partindo da iniciativa da Legendary Mother Zaila Candace, ao propor uma casa exclusivamente voltada para pessoas trans e travestis e, ao longo desses três anos, esteve presente em workshops de dança e performance, festivais nacionais de arte LGBTQIA+, institutos nacionais de arte e com atuação marcante nas balls e comunidade ballroom e suas atividades como um todo. A Casa de Candaces realizou sua programação de aniversário de 1 ano, contando com oficinas, performance e roda de conversa, e, ao final, foi promovida a primeira edição da Black and Gold Ball, um baile idealizado pela Casa de Candaces, totalmente de forma virtual. A segunda Black and Gold Ball aconteceu no ano de 2022, em parceria com o Museu da Língua Portuguesa e em comemoração aos 3 anos da kiki house.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionEntrega" aria-expanded="false" aria-controls="collapseOne">
+              Categorias marcantes
+            </button>
+          </h2>
+          <div id="accordionEntrega" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Real Cria/Faixa Rosa, Roxa ou Preta - Realness.<br>
+              Quem é: é. Quem não é: nunca vai ser. Brota quem é cria, e brota quem é Barbie, brota quem é Faixa e quem é Baddie.  
+              Cria tem estilo e favela é realidade, brota daquele jeitão, pique dia de baile, pra contar sua história. 
+              Categoria aberta para Favelades. <br> <br>
+              Og favela Style - Fashion Killa.<br>
+              Mona, não faz feiúra. O tema dessa categoria é originalidade. Favela é moda e aqui não tá tendo brazilcore dessa vez. 
+              Traga pra passarela aquele estilo que é só teu, a tua marca de Cria Favela Chic.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

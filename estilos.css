@@ -1,0 +1,158 @@
+body {
+  --bege: #E6E0D6;
+  --marrom-escuro: #B8860B;
+  --marrom-claro: #DAA520;
+  font-family: 'Barlow', sans-serif;
+
+}
+/*IMG CARD DE PRODUCAO*/
+.card-img-overlay {
+  opacity: 0; /* Esconde o texto inicialmente */
+  transition: transform 0.5s;
+}
+.card:hover .card-img {
+  opacity: 0.3; /* Opacidade reduzida ao passar o mouse */
+  transition: opacity 0.5s ease; /* Adiciona uma transição suave */
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+/*nao estourar o card com o zoom da imagem*/
+.card {
+  overflow: hidden; /* Adicione esta linha */
+}
+
+/*DESCRICAO DE CARD PRODUCAO*/
+.card:hover .card-img-overlay {
+  opacity: 1; /* Mostra o texto ao passar o mouse */
+}
+
+.carousel-item img {
+  width: 100%; /* Largura máxima em pixels */
+  height: 50vh; /* Altura máxima em pixels */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  object-fit: cover;
+}
+
+
+/* Navbar transparente (inicial) */
+.navbar-transparent {
+  background-color: transparent !important; /* !important para sobrescrever o bg-body-tertiary */
+  backdrop-filter: blur(1px); /* Opcional: adiciona um efeito de desfoque */
+  transition: background-color 0.8s ease;
+}
+
+/* Navbar com cor sólida (após rolagem) */
+.navbar-solid {
+  background-color: #f8f9fa; /* Cor de fundo desejada */
+  transition: background-color 0.8s ease; /* Transição suave para a mudança de cor */
+}
+.navbar-brand img{
+  width: 600px;
+  transition: width 0.8s ease;
+}
+.navbar.scrolled .navbar-brand img {
+  width: 130px;
+  transition: width 2s ease;
+}
+
+input[type=checkbox] {
+  border: 2px solid var(--marrom-claro);
+  box-shadow: none;
+}
+
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--marrom-claro);
+  border-color: var(--marrom-claro);
+  box-shadow: none;
+  outline: none;
+}
+
+.banner-1 {
+  background-image: url(srcs/banner\ 1.jpg);
+}
+
+.banners {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banners-titulo {
+  --bs-bg-opacity: .2;
+}
+
+.banner-2{
+  background-image: url(srcs/blackngold-206.jpg);
+}
+
+.banner-3{
+  background-image: url(./srcs/banner\ 3.jpeg);
+}
+.banner-4 {
+  background-image: url(srcs/Group\ 1.png);
+}
+.banners {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banners-titulo {
+    --bs-bg-opacity: .2;
+}
+
+.botao-padrao {
+  background-color: var(--marrom-claro);
+  color: black;
+}
+
+.botao-padrao:hover {
+  background-color: var(--marrom-escuro);
+}
+
+.input-range::-webkit-slider-thumb, footer {
+  background-color: var(--marrom-claro);
+}
+
+[data-bs-theme="dark"] {
+  color: #AE8D37;
+  .nav-link, .card-body, .offcanvas, .accordion, .btn {
+    --bs-nav-link-color: #AE8D37;
+    --bs-card-color: rgb(0, 255, 76);
+    --bs-offcanvas-color: rgb(0, 255, 76);
+    --bs-body-color:rgb(0, 255, 76);
+  }
+}
+/* Cores para o tema claro (padrão) */
+.nav-link, .card-body, .offcanvas, .accordion, .btn {
+  --bs-nav-link-color: #AE8D37;
+  --bs-card-color: rgb(0, 0, 0);
+  --bs-offcanvas-color: rgb(0, 255, 76);
+  --bs-body-color: #f8f9fa(255, 255, 255, 0.726);
+}
+
+.d-flex {
+  display: flex; /* Ativa o flexbox */
+  /* flex-wrap: nowrap; Impede a quebra de linha dos cards */
+  overflow-x: hidden; /* Habilita a rolagem horizontal */
+}
+/*alterarflow-x para auto depois e verificar possibilidade de incluir um botao de scrool horizontal mais bonitinho*/
+
+.card {
+  flex: 0 0 18rem; /* Mantém o tamanho fixo (18rem) e não permite crescimento */
+  margin-right: 1rem; /* Espaçamento entre os cards */
+}
+#modalCarousel .carousel-inner {
+  overflow: visible; /* Para que os modais não sejam cortados */
+}
+
+#modalCarousel .modal-dialog {
+  margin: 0 auto; /* Centraliza os modais horizontalmente */
+}
